@@ -12,7 +12,7 @@ ul,ol{
 body{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
-    min-width: 1350px;
+    min-width: 1450px;
 }
 #top{
     width: 1350px;
@@ -29,6 +29,11 @@ body{
     float: left;
     padding: 0 5px;
 }
+#top ul li a:hover{
+color: white;
+background: black;
+padding: 10px;
+}
 #header{
     width: 1350px;
     height: 124px;
@@ -37,24 +42,67 @@ body{
 }
 #header ul li{
     float: left;
-    padding:  50px 99px;
+    padding:  50px 99px 0;
 }
 #header ul li a{
     font-weight: bold;
     font-size: 20px;
+    display: block;
 }
+#header li a:hover{color:#f16136;}
+.solid{width:100%;
+		margin:auto;
+		margin-top:20px;
+		height:5px;
+		background:#f16136;
+		visibility:hidden;
+		opacity:0;
+		transform:scaleX(0);
+		transition-property:opacity, transform;
+		transition-duration:0.5s;}
+#header li a:hover .solid{transform:scaleX(1);
+						opacity:1;
+						visibility:visible;}
+                        
+
+
+
+.button{
+    transition:all 0.5s;
+			position:fixed;
+			right:30px;
+			bottom:50px;
+			background:black;
+			border-radius:50%;
+            z-index: 10;
+            }
+		.button:hover{
+            transform:translateY(-5px);
+			box-shadow:5px 5px 10px rgba(0,0,0,0.3)
+            }
+		.button a{
+            display:inline-block;
+			padding:15px 0;
+			text-align:center;
+			width:51px;
+			color:#fff;
+            }
+
+
 #mb{
     
     background: url(images/mb.png)no-repeat center top #dca69c;
-    height: 800px;   
+    height: 800px;  
+    
 }
 #mb2{
     background: url(images/mb2.png) no-repeat center top #faf5e2;
     height: 800px; 
 }
 #mb3{
-     background: url(images/mb3.png)no-repeat center top #73503d;
+     background: url(images/mb3.png)  right top #73503d;
     height: 800px; 
+    
 }
 #mb h1{
    
@@ -99,6 +147,7 @@ body{
     text-align: center;
     font-weight: bold;
     height: 450px;
+    box-sizing: border-box;
 }
 #best .d1{
     background: url(images/best01.png) no-repeat;
@@ -119,10 +168,8 @@ body{
     background-color: rgb(59, 23, 23);
    transition: all 3s;
 }
-#best dl dd a:hover{
-    color: white;
-    transition: all 0.5s;
-}
+
+
 #best span{
     color: indianred;
     line-height: 30px;
@@ -148,13 +195,13 @@ body{
 #best h2 a{
     color: white;
     font-weight: normal;
-   
     display: inline-block;
 }
 
 #sb{
     background: url(images/sb.png) no-repeat center top #ffcd85;
    height: 644px;
+      
 }
 #sb_inner{
     width: 1350px;
@@ -289,28 +336,9 @@ body{
     width: 1350px;
     margin: auto;
 }
-#bg #text{
-   padding-top: 200px;
-   color: white;
-    line-height: 30px;
-    float: left;
-}
 
-#bg h1 span{
-    color:sandybrown;
-   
-}
-#bg h1{
-    padding-bottom: 30px;
-    font-size: 35px;
-    line-height: 40px;
-}
-#bg p{
-    font-size: 20px;
-    line-height: 50px;
-}
 #video{
-    float: right;
+    text-align: center;
     padding-top: 50px;
 }
 #insta{
