@@ -277,6 +277,7 @@ padding: 10px;
     background-position: center top;
 }
 
+
 #store_inner{
     width: 980px;
     margin: auto;
@@ -339,7 +340,7 @@ padding: 10px;
 
 #video{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 #insta{
     height: 500px;
